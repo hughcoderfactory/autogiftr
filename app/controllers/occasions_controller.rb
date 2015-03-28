@@ -1,6 +1,10 @@
 class OccasionsController < ApplicationController
-  before_action :set_occasion, only: [:show, :edit, :update, :destroy]
-
+  before_action :set_occasion, only: [:add_gift, :show, :edit, :update, :destroy]
+def add_gift
+@gift = Gift.find(params[:gift])
+@occasion.gifts << @gift 
+redirect_to :back
+end
   # GET /occasions
   # GET /occasions.json
   def index
@@ -10,6 +14,8 @@ class OccasionsController < ApplicationController
   # GET /occasions/1
   # GET /occasions/1.json
   def show
+    @chosen_gifts = @occasion.gifts
+    @gifts = Gift.all
   end
 
   # GET /occasions/new
