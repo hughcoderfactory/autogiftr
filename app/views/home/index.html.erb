@@ -1,3 +1,4 @@
+
 <div id="headerwrap">
 		<div class="container">
 			<div class="row">
@@ -16,7 +17,7 @@
 
 			</div>
 		</div><!-- /row -->
-		
+		<%= link_to 'My account', account_path(current_user.account), class: 'btn btn-primary' %>
 		<div class="row mt centered">
 			<div class="col-lg-4">
 				<img src="<%=asset_path 'ser01.png' %>" width="180" alt="">
