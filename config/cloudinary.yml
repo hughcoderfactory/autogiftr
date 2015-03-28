@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dyzhos5xa
+  api_key: '873872691439291'
+  api_secret: P0zUl3NeCTbSHb77shKhwlno8QY
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: dyzhos5xa
+  api_key: '873872691439291'
+  api_secret: P0zUl3NeCTbSHb77shKhwlno8QY
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: dyzhos5xa
+  api_key: '873872691439291'
+  api_secret: P0zUl3NeCTbSHb77shKhwlno8QY
+  enhance_image_tag: true
+  static_image_support: false
